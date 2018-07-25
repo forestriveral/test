@@ -22,3 +22,23 @@ git push origin master
 cd existing_git_repo
 git remote add origin git@github.com:<你的ID>/test.git
 git push origin master
+
+
+# Next steps:
+mkdir test # cd test
+git init
+# github会自动读取你的README内容并显示在项目简介中，因此先创建README
+touch README
+# 将README加到index中
+git add README 
+# 提交到版本库中
+git commit -m 'first commit'
+# 把github的repo加入为远程的repo
+git remote add origin git@github.com:<你的ID>/test.git
+# 把目前的commit状态push并同步到github上面
+git push origin master
+ 
+# Existing Git Repo?
+cd existing_git_repo
+git remote add origin git@github.com:<你的ID>/test.git
+git push origin master
